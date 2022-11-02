@@ -1,0 +1,80 @@
+:root{
+--kleur1: rgb(2, 59, 182);
+--grijs: rgb(170,170,170);
+--grijshover: rgb(110,110,110)
+}
+
+*, body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+color: var(--grijs);
+}
+
+#logo{
+    width: 95%; 
+    margin: auto;
+    padding-bottom: 0.5vw;
+
+}
+hr{
+    height: 0.5vw;
+    background-color:  var(--kleur1);
+       border: none;
+}
+#logo:hover{
+    cursor: pointer;
+}
+nav ul{
+list-style-type: none;   
+display: none;
+background-color: var(--kleur1);
+padding: 0.8vw;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+nav ul li{
+    margin: 1.3vw auto;
+
+}
+a{
+    font-weight: 900;
+font-size: 2.5vw;
+    text-decoration: none;
+}
+li:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    text-shadow: 0 0.3vw 0.3px var(--grijshover);
+}
+
+/*Contact*/
+.contact{
+    position: relative;
+    margin: 2vw;
+font-size: 2.2vw;
+}
+.googleMap{
+    height: 60vh;
+    width: 100vw;
+}
+/*index*/
+.home{
+    position: relative;
+    margin-top: 1.8vw; 
+}
+#tandwiel{
+    width: 95%;
+    opacity: 60%;
+}
+#naam{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+}
