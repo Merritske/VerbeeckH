@@ -12,18 +12,21 @@ padding: 0;
 text-align: center;
 color: var(--grijs);
 }
-
+#position{
+    height: 25vw;
+}
 #logo{
-    width: 70%; 
-    margin: auto;
-    padding-bottom: 0.5vw;
+    width: 80vw; 
+    margin: 0 auto;
+    padding: 0.8vw 10vw;
+position: fixed;
+left: 0;
+z-index: 2;
 
+background-color: white;
+border-bottom: 0.5vw solid var(--kleur1);
 }
-hr{
-    height: 0.5vw;
-    background-color:  var(--kleur1);
-       border: none;
-}
+
 #logo:hover{
     cursor: pointer;
 }
@@ -34,7 +37,8 @@ background-color: var(--kleur1);
 padding: 0.8vw;
 }
 nav{
-    position: absolute;
+    position: fixed;
+    top: 25vw;
     width: 100%;
     z-index: 2;
 }
@@ -54,11 +58,14 @@ li:hover{
 }
 
 /*Contact*/
-.contact{
-    position: relative;
-    margin: 2vw;
+#contactpoint{
+    height: 10vw;
 }
-.contact h3{
+#contact{
+
+    margin: 15vw 2vw 2vw 2vw;
+}
+#contact h3{
     font-size: 2.2vw;
 }
 .googleMap{
@@ -66,10 +73,16 @@ li:hover{
     width: 80vw;
     margin: 0 auto;
 }
+main{
+    position: absolute;
+    top: 25vw;
+    width: 100%;
+}
 /*index*/
 .home{
-    position: relative;
+ 
     margin-top: 1.8vw; 
+
 }
 #tandwiel{
     width: 95%;
@@ -81,4 +94,22 @@ li:hover{
     top: 30%;
     right: 0;
     z-index: 1;
+}
+.projecten{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+.project{
+    width: 680px;  
+    border: 3px solid var(--kleur1);
+    margin: 0.8vw;
+    padding: 12px;
+}
+.project h2, p{
+       font-size: 2.2vw;
+
 }
