@@ -1,0 +1,21 @@
+:root{
+    --kleur1: rgb(2, 59, 182);
+    --grijs: rgb(208, 208, 208);
+    --grijshover: rgb(110,110,110)
+    }
+*, html{
+   background-color: var(--grijs) ; 
+   font-size: 25px;
+}
+main{
+    font-size: 25px;
+     width: 800px;
+    margin: 0 auto;
+}
+header{
+    width: 2000px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 50px;
+}
