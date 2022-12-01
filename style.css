@@ -1,6 +1,7 @@
 :root{
 --kleur1: rgb(2, 59, 182);
 --grijs: rgb(170,170,170);
+--text: rgb(50,50,50);
 --grijshover: rgb(110,110,110)
 }
 
@@ -16,13 +17,12 @@ color: var(--grijs);
     height: 25vw;
 }
 #logo{
-    width: 80vw; 
+    width: 60vw; 
     margin: 0 auto;
-    padding: 0.8vw 10vw;
+    padding: 0.8vw 25vw;
 position: fixed;
 left: 0;
 z-index: 2;
-
 background-color: white;
 border-bottom: 0.5vw solid var(--kleur1);
 }
@@ -46,7 +46,7 @@ nav ul li{
     margin: 1.3vw auto;
 
 }
-a{
+nav ul li >a{
     font-weight: 900;
 font-size: 2.5vw;
     text-decoration: none;
@@ -59,14 +59,16 @@ li:hover{
 
 /*Contact*/
 #contactpoint{
-    height: 10vw;
+    height: 20vw;
 }
 #contact{
-
-    margin: 15vw 2vw 2vw 2vw;
+color: var(--text);
+    margin: 13vw 2vw 5vw 2vw;
 }
 #contact h3{
     font-size: 2.2vw;
+    margin: 0;
+    color: var(--text);
 }
 .googleMap{
     height: 60vh;
@@ -74,8 +76,8 @@ li:hover{
     margin: 0 auto;
 }
 main{
-    position: absolute;
-    top: 25vw;
+
+    margin-top: 15vw;
     width: 100%;
 }
 /*index*/
@@ -88,16 +90,23 @@ main{
     width: 95%;
     opacity: 60%;
 }
-#naam{
+/* #naam{
     width: 50%;
     position: absolute;
     top: 30%;
     right: 0;
     z-index: 1;
-}
+} */
+ #projectspoint{
+height: 20vw;
+ }
+ h2{
+    font-size: 3rem;
+    color: var(--text);
+ }
 .projecten{
   width: 80%;
-  margin: 0 auto;
+  margin: 4.2vw auto;
   display: flex;
  flex-direction: row;
  flex-wrap: wrap;
@@ -111,5 +120,5 @@ main{
 }
 .project h2, p{
        font-size: 2.2vw;
-
+       color: var(--text);
 }
